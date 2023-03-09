@@ -3,10 +3,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.body {
+    background-color: var(--primary-color);
+}
 /* Basic Styling */
+:root{
+    --secdondary-color: rgb(134, 215, 244);
+    --tertiary-color:  #0d0d0d;
+
+}
+.dark-theme{
+    --secdondary-color: rgb(17, 19, 31);
+    --tertiary-color:  #ff  f;
+}
+
+#icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 1100px;
+    color: #fff;
+}
 html {
-    background-color: #56baed;
+    background-color: #fff;
 }
 
 body {
@@ -46,7 +64,7 @@ h2 {
 #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
-    background: #fff;
+    background: var(--secdondary-color);
     padding: 30px;
     width: 50%;
     min-width: 450px;
@@ -68,12 +86,12 @@ h2 {
 /* Tabs */
 
 h2.inactive {
-    color: #cccccc;
+    color: #4b4b4b;
 }
 
 h2.active {
-    color: #0d0d0d;
-    border-bottom: #5fbae9;
+    color: var(--tertiary-color);
+    border-bottom: var(--primary-color);
 }
 
 
@@ -84,7 +102,7 @@ input[type="password"],
 input[type="submit"] {
     background-color: #56baed;
     border: none;
-    color: rgb(10, 10, 10);
+    color: var(--tertiary-color);
     padding: 15px 80px;
     text-align: center;
     text-decoration: none;
@@ -120,7 +138,7 @@ input[type="password"]:focus{
 }
 input[type="text"]::placeholder,
 input[type="text"]::placeholder{
-    color: #030303;
+    color: var(--tertiary-color);
 }
 .fadeInDown{
     -webkit-animation-name: smiles;
@@ -204,9 +222,12 @@ input[type="text"]::placeholder{
 }
 
 .underline:hover {
-    color: #0d0d0d;
+    color: var(--tertiary-color);
 }
 
 .underline:hover:after {
     width: 100%;
+}
+.fadeInfirst{
+    color: var(--tertiary-color);
 }
